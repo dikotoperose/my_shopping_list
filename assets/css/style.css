@@ -1,0 +1,168 @@
+/* Login Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+body {
+  background: #76b852;
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+h1 {
+  color: #FFFFFF!important;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 25px;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.login-page, .register-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/*Strikethrough Style*/
+
+
+:root {
+  --primary-color: #064635;
+}
+
+main {
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+
+  padding: 2em;
+}
+
+.shopping {
+  padding: 2.4em 2em;
+
+  display: grid;
+  row-gap: 2em;
+
+  background: white;
+  box-shadow: 2px 0 15px -2px rgba(0, 0, 0, 0.2);
+
+  border-radius: 12px;
+
+  min-width: 300px;
+}
+
+.shopping__title {
+  font-size: 1.4em;
+  font-weight: 700;
+
+  text-align: center;
+
+  padding-bottom: 1em;
+
+  border-bottom: 4px dotted var(--primary-color);
+  color: var(--primary-color);
+}
+
+.shopping__checklist {
+  display: grid;
+  row-gap: 1.6em;
+
+  list-style-type: none;
+}
+
+.shopping__item {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.shopping__check {
+  appearance: none;
+  cursor: pointer;
+  
+  margin-top: 1px;
+  padding: 3px;
+  
+  aspect-ratio: 1/1;
+  height: 1.2em;
+  
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.shopping__label {
+  user-select: none;
+  cursor: pointer;
+  
+  flex-grow: 1;
+}
+
+.shopping__check:checked {
+  background: var(--primary-color);
+  background-clip: content-box;
+  
+  opacity: 0.4;
+}
+
+.shopping__check:checked + .shopping__label {
+  text-decoration:
+     line-through var(--primary-color) 2px;
+  
+  opacity: 0.4;
+}
